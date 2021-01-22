@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{  
+        box-sizing: border-box; 
+        }
+    .Column{
+        text-align: center;
+        width: 24%;
+        padding: 0px;
+        float: left;
+        margin: 5px;
+        transition: transform .2s;
+            }
+            .Column:hover {
+             -ms-transform: scale(1).2; /* IE 9 */
+                -webkit-transform: scale(1.2); /* Safari 3-8 */
+                 transform: scale(1.2); 
+}
+           
+    .row::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .text{
+        text-align: center;
+        color: teal;
+    }
+    @media screen and (max-width: 992px) {
+  .Column {
+    width: 50%;
+  }
+    }
+    @media screen and (max-width: 600px) {
+  .Column {
+     
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+    <div class="text" ><h1>Media Query for columns-increase of decrease the screen size to see the change</h1></div>
+    <br>
+    <br>
+    <div class="Row">
+        <div class="Column" style="background-color: tomato; ">
+            <h2>Aman Bhaiya</h2>
+            <p>Apna College</p>
+        </div>
+        <div class="Column" style="background-color:turquoise ;">
+            <h2>WebDev wale Bhaiya</h2>
+            <p>HTML | CSS | JS</p>
+        </div>
+        <div class="Column" style="background-color:tomato">
+            <h2>C++ wali didi</h2>
+            <p>C++ | DS</p>
+        </div>
+        <div class="Column" style="background-color: turquoise;">
+            <h2>We Students</h2>
+            <p>Bhut Sikhne Wale</p>
+        </div>
+    </div>
+</body>
+</html>
